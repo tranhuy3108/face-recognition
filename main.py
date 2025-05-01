@@ -11,7 +11,7 @@ from camera import FaceAttendanceSystem
 from XuatDS import AttendanceReader
 
 # =============== CẤU HÌNH ===============
-CAMERA_URL = "192.168.1.70//4747"
+CAMERA_URL = 0
 
 # Kết nối SQL Server
 conn = pyodbc.connect(
@@ -386,7 +386,7 @@ def main():
                 db_connection=conn,
                 background_img_path='img/Resources/background.png',
                 mode_folder_path='img/Resources/Modes',
-                camera_url="http://192.168.1.70:4747/video"
+                camera_url=0
             )
             attendance_system.recognize_and_attend()
         elif choice == "5":
