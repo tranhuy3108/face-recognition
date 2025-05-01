@@ -384,8 +384,8 @@ def main():
         elif choice == "4":
             attendance_system = FaceAttendanceSystem(
                 db_connection=conn,
-                background_img_path='face-recognition/Resources/background.png',
-                mode_folder_path='face-recognition/Resources/Modes',
+                background_img_path='img/Resources/background.png',
+                mode_folder_path='img/Resources/Modes',
                 camera_url="http://192.168.1.70:4747/video"
             )
             attendance_system.recognize_and_attend()
